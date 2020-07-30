@@ -19,7 +19,7 @@ async def on_message(message):
         # get the content of the message
         word = message.content
         # print the content of the message
-        print("{0.author} says: " + word)
+        print('{0.author} says: {0.content}'.format(message))
         # create an array that holds the range specified by user
         res = [int(i) for i in word.split() if i.isdigit()]
         # start position of range
